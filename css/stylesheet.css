@@ -1,0 +1,24 @@
+.box-container {
+  height: 200px;
+}
+
+.box-item {
+  width: 100%;
+  z-index: 1000
+}
+
+nav {
+  margin-top: -10px;
+}
+
+div.row.center {
+  margin-top: 25px;
+}
+
+h3 {
+  font-family: Amatic SC;
+}
+
+li.brand-logo.right {
+  font-family:
+}
