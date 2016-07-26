@@ -11,14 +11,36 @@ nav {
   margin-top: -10px;
 }
 
+nav ul li a {
+  padding: 0 150px;
+}
+
 div.row.center {
   margin-top: 25px;
 }
 
-h3 {
+h3, h4 {
   font-family: Amatic SC;
 }
 
 li.brand-logo.right {
   font-family:
+}
+
+div.card-content.white-text {
+  font-size: 13px;
+}
+
+div.row.center {
+  margin-top: 75px;
+}
+
+div#intrinsic.panel-body.box-container.ui-droppable {
+  border-style: solid;
+  border-color: grey;
+}
+
+div#extrinsic.panel-body.box-container.ui-droppable {
+  border-style: solid;
+  border-color: grey;
 }

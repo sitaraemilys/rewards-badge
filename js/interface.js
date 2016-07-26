@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-$('.box-item').draggable({
+$('.card orange').draggable({
     cursor: 'move',
     helper: "clone"
 });
@@ -16,23 +16,23 @@ $("#container1").droppable({
   }
 });
 
-$("#container2").droppable({
+$("#intrinsic").droppable({
   drop: function(event, ui) {
     var itemid = $(event.originalEvent.toElement).attr("itemid");
     $('.box-item').each(function() {
       if ($(this).hasClass("btn btn-default box-item intrinsic")) {
-        $(this).appendTo("#container2");
+        $(this).appendTo("#intrinsic");
       }
     });
   }
 });
 
-$("#container3").droppable({
+$("#extrinsic").droppable({
   drop: function(event, ui) {
     var itemid = $(event.originalEvent.toElement).attr("itemid");
     $('.box-item').each(function() {
       if ($(this).attr("itemid") === itemid) {
-        $(this).appendTo("#container3");
+        $(this).appendTo("#extrinsic");
       }
     });
   }
