@@ -35,12 +35,25 @@ div.row.center {
   margin-top: 75px;
 }
 
-div#intrinsic.panel-body.box-container.ui-droppable {
+div#intrinsic {
   border-style: solid;
   border-color: grey;
+  width: 330px;
 }
 
-div#extrinsic.panel-body.box-container.ui-droppable {
+div#extrinsic {
   border-style: solid;
   border-color: grey;
+  width: 330px;
+}
+
+#duke {
+  color: white;
+  position: absolute;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+#logo {
+  margin-left: -170px;
 }

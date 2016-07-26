@@ -7,7 +7,7 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js"></script>
     <script type="text/javascript" src="js/interface.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script> -->
     <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
     <title></title>
   </head>
@@ -28,7 +28,7 @@
       </div>
     </nav>
 
-    <div class="container" id="container1">
+    <div class="container">
       <div class="row center">
           <h3>Are the following intrinsic or extrinsic motivators?</h3>
       </div>
@@ -36,10 +36,12 @@
 
     <div class="row">
       <div class="col s3 offset-s3">
-        <div class="panel panel-default">
-          <div class="card orange">
-            <div class="card-content white-text">
-              <p class="center">GETTING PAID FOR YOUR WORK</p>
+        <div class="draggable-extrinsic">
+          <div class="panel panel-default">
+            <div class="card orange">
+              <div class="card-content white-text">
+                <p class="center">GETTING PAID FOR YOUR WORK</p>
+              </div>
             </div>
           </div>
         </div>
@@ -47,9 +49,11 @@
 
       <div class="col s3">
         <div class="panel panel-default">
-          <div class="card orange">
-            <div class="card-content white-text">
-              <p class="center">COMPLETING YOUR STUDIES</p>
+          <div class="draggable-intrinsic">
+            <div class="card orange">
+              <div class="card-content white-text">
+                <p class="center">COMPLETING YOUR STUDIES</p>
+              </div>
             </div>
           </div>
         </div>
@@ -59,20 +63,24 @@
 
   <div class="row">
     <div class="col s3 offset-s3">
-      <div class="panel panel-default">
-        <div class="card orange">
-          <div class="card-content white-text">
-            <p class="center">SOLVING A PROBLEM</p>
+      <div class="draggable-intrinsic">
+        <div class="panel panel-default">
+          <div class="card orange">
+            <div class="card-content white-text">
+              <p class="center">SOLVING A PROBLEM</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
     <div class="col s3">
-      <div class="panel panel-default">
-        <div class="card orange">
-          <div class="card-content white-text">
-            <p class="center">LEARNING MORE ABOUT THE DIGITAL WORLD</p>
+      <div class="draggable-extrinsic">
+        <div class="panel panel-default">
+          <div class="card orange">
+            <div class="card-content white-text">
+              <p class="center">LEARNING MORE ABOUT THE DIGITAL WORLD</p>
+            </div>
           </div>
         </div>
       </div>
@@ -105,26 +113,30 @@
 <div class="container">
   <div class="row center">
       <h3>Which of these is not a level in Maslow's Hierarchy?</h3>
-      <h6><em>Select one of the following:</em></h6>
+      <h6>Select one of the following:</h6>
   </div>
 </div>
 
 <div class="row">
   <div class="col s3 offset-s3">
-    <div class="panel panel-default" id="container1">
-      <div class="card orange">
-        <div class="card-content white-text">
-          <p class="center">PHYSIOLOGICAL</p>
+    <div class="maslow">
+      <div class="panel panel-default">
+        <div class="card orange">
+          <div class="card-content white-text">
+            <p class="center">PHYSIOLOGICAL</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
   <div class="col s3">
-    <div class="panel panel-default" id="container1">
-      <div class="card orange">
-        <div class="card-content white-text">
-          <p class="center">SECURITY</p>
+    <div class="panel panel-default">
+      <div class='maslow'>
+        <div class="card orange">
+          <div class="card-content white-text">
+            <p class="center">SECURITY</p>
+          </div>
         </div>
       </div>
     </div>
@@ -134,26 +146,43 @@
 
 <div class="row">
 <div class="col s3 offset-s3">
-  <div class="panel panel-default" id="container1">
-    <div class="card orange">
-      <div class="card-content white-text">
-        <p class="center">ESTEEM</p>
+  <div class="panel panel-default">
+    <div class='maslow'>
+      <div class="card orange">
+        <div class="card-content white-text">
+          <p class="center">ESTEEM</p>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
 <div class="col s3">
-  <div class="panel panel-default" id="container1">
-    <div class="card orange">
-      <div class="card-content white-text">
-        <p class="center">TECHNOLOGY</p>
+  <div class="panel panel-default">
+    <div class='maslow' id='correct'>
+      <div class="card orange">
+        <div class="card-content white-text">
+          <p class="center">TECHNOLOGY</p>
+        </div>
       </div>
     </div>
   </div>
 </div>
 </div>
 </div>
+
+<footer class="page-footer blue lighten-1">
+ <div class="container">
+   <div class="row">
+     <div class="col l6 s12">
+       <img id="logo" src='/img/logo.png'>
+         <a id="duke" href='http://thedukeofyork.org/'>HRH THE DUKE OF YORK</a>
+     </div>
+   </div>
+ </div>
+</footer>
+
+
 
 
 
