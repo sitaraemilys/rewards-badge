@@ -1,3 +1,5 @@
+var correctCards = 0;
+
 $(document).ready(function() {
 
   $('#successMessage').hide();
@@ -38,6 +40,7 @@ function handleIntrinsicDropEvent(event, ui){
         ui.draggable.draggable( 'disable' );
         ui.draggable.draggable( 'option', 'revert', false );
         $.playSound('sounds/ping');
+        correctCards++;
       if ((ui.draggable).attr('id') === 'solving'){
         ui.draggable.position( { my: 'center', at: 'center', of: '#solving-problems' } );
       } else {
@@ -54,6 +57,7 @@ function handleExtrinsicDropEvent(event, ui){
     ui.draggable.draggable( 'disable' );
     ui.draggable.draggable( 'option', 'revert', false );
     $.playSound('sounds/ping');
+    correctCards++;
     if ((ui.draggable).attr('id') === 'paid'){
       ui.draggable.position( { my: 'center', at: 'center', of: '#getting-paid' } );
     } else {
@@ -67,8 +71,15 @@ $('.maslow').click(function(){
     .removeClass("orange");
   if ($(this).attr("id") === "correct"){
     $(this).children().children().css( "class", "card").addClass("green");
-    $.playSound('sounds/applause');
-    swal({   title: "Completed",   text: "Well done you clever clogs!",   type: "success",   confirmButtonText: "Cool" });
+    correctCards++;
+    if (correctCards == 5){
+      $.playSound('sounds/applause');
+      swal({
+        title: "Completed",
+        text: "Well done you clever clogs!",
+        type: "success",
+        confirmButtonText: "Cool" });
+    }
     $('.maslow').unbind('click');
   } else {
     $(this).children().children().css( "class", "card").addClass("red");

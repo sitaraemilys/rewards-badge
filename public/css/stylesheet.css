@@ -30,16 +30,11 @@ footer.page-footer.blue.lighten-1 {
   margin-top: 60px;
 }
 
-div#intrinsic {
+div#intrinsic, div#extrinsic {
   border-style: solid;
   border-color: grey;
   width: 324.5px;
-}
-
-div#extrinsic {
-  border-style: solid;
-  border-color: grey;
-  width: 324.5px;
+  height: 193px;
 }
 
 .box-container {
@@ -70,18 +65,6 @@ div#extrinsic {
   margin-left: -170px;
 }
 
-#solving-problems {
-  height: 97px;
-}
-
-#completing-studies {
-  height: 97px;
-}
-
-#getting-paid {
-  height: 97px;
-}
-
-#digital-world {
-  height: 97px;
+#solving-problems, #completing-studies, #getting-paid, #digital-world {
+  height: 96.5px;
 }
