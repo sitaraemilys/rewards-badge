@@ -83,6 +83,7 @@ $('.maslow').click(function(){
     $('.maslow').unbind('click');
   } else {
     $(this).children().children().css( "class", "card").addClass("red");
+    $.playSound('sounds/wrong');
   }
 });
 
